@@ -22,8 +22,6 @@ function TodoList() {
 
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [isDoneList,setIsDoneList]=useState([]);
-  const [isNotDoneList,setIsNotDoneList]=useState([]);
 
   const onChangeHandler = (e) => {
     const { name, value } = e.target;
