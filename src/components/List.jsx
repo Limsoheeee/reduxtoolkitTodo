@@ -1,6 +1,5 @@
 import React from "react";
 import ToDo from "./ToDo";
-import ToDoList from "../TodoList";
 import { useSelector } from "react-redux";
 
 const List = () => {
@@ -12,7 +11,7 @@ const List = () => {
         <h1>IsDone</h1>
         {isDoneList.map((item)=>{
             return(       
-                <ToDo item={item}/>          
+                <ToDo item={item} key={item.id} />          
             )
         })}
       </div>
@@ -20,7 +19,7 @@ const List = () => {
         <h1>IsNotDone</h1>
         {isNotDoneList.map((item)=>{
             return(       
-                <ToDo item={item}/>             
+                <ToDo item={item} key={item.id} />             
             )
         })}
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import TodoList from "../TodoList";
 import { useDispatch } from "react-redux";
 import { delCard, changeIsDone, changeIsNotDone } from "../slice/todoSlice";
 
